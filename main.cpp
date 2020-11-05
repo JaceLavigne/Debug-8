@@ -5,15 +5,16 @@ class Mammals {
   private:
     string name;
     string location;
-    // Set function
-    string getName(){
-      return this->name;
-    }
   public:
     // Constructor
     Mammals (string x, string y){
       this->name = x;
       this->location = y;
+    }
+    // Get function
+    // moved funtion to public methods to be able to use it outside of the class
+    string getName(){
+      return this->name;
     }
     // Get function
     string getLoc(){
